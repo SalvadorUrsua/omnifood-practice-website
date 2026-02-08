@@ -196,7 +196,7 @@
 }
 
 /*************************************/
-/*   BELOW 704px (Smaller Tablets)   */
+/*   BELOW 740px (Smaller Tablets)   */
 /*************************************/
 
 @media (max-width: 47em) {
@@ -254,6 +254,7 @@
     right: -25%;
     padding: 0.8rem 10rem;
     transform: rotate(45deg);
+    content: "Best Ito Na";
   }
 }
 
