@@ -1,9 +1,0 @@
-- Logo + Navigation
-- Hero
-- Featured in
-- How it works
-- Meals (and list of diets)
-- Testimonials + Gallery
-- Pricing + features
-- Call to action
-- Footer
