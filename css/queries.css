@@ -250,7 +250,9 @@
 
   .pricing-plan--complete::after {
     top: 5%;
-    right: -15%;
+    right: -40%;
+    padding: 0.8rem 10rem;
+    transform: rotate(45deg);
   }
 }
 
