@@ -20,6 +20,11 @@
   .logos img {
     height: 2.4rem;
   }
+
+  .pricing-plan--complete::after {
+    top: 5%;
+    right: -25%;
+  }
 }
 
 /*************************************/
@@ -56,18 +61,10 @@
     gap: 4.8rem;
   }
 
-  .testimonials-container {
-    /* padding: 9.6rem 3.2rem; */
+  .pricing-plan--complete::after {
+    top: 5%;
+    right: -25%;
   }
-
-  /* .pricing-plan {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .plan-sign-up {
-    margin-top: auto;
-  } */
 }
 
 /*************************************/
@@ -100,7 +97,6 @@
   }
 
   .logos img {
-    /* width: 9.6rem; */
     height: 2.4rem;
   }
 
@@ -117,7 +113,6 @@
   }
 
   .gallery {
-    /* grid-template-columns: 1fr; */
     grid-template-columns: repeat(6, 1fr);
   }
 
@@ -200,6 +195,11 @@
 /*************************************/
 
 @media (max-width: 47em) {
+  html {
+    /* 7  16 = 44% */
+    font-size: 44%;
+  }
+
   .grid--3-cols,
   .grid--4-cols {
     grid-template-columns: repeat(2, 1fr);
@@ -252,22 +252,22 @@
   .pricing-plan--complete::after {
     top: 6%;
     right: -25%;
-    padding: 0.8rem 10rem;
-    transform: rotate(45deg);
-    content: "Best Ito Na";
   }
 }
 
 /*************************************/
 /*   BELOW 704px (Smaller Tablets)   */
 /*************************************/
-
+/* 704 / 16 = 44 */
 @media (max-width: 44em) {
   .grid--3-cols,
   .grid--4-cols {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .logos img {
+    height: 2.4rem;
+  }
   .diets {
     grid-column: 1 / -1;
     justify-self: center;
@@ -313,10 +313,92 @@
   }
 
   .pricing-plan--complete::after {
-    top: 6%;
-    right: -40%;
-    padding: 0.8rem 10rem;
-    transform: rotate(45deg);
+    top: 4%;
+    right: -30%;
+  }
+}
+
+/*************************************/
+/*   BELOW 587px (Smaller Tablets)   */
+/*************************************/
+
+/* 6 / 16 =  */
+/* 587 / 16 = 37 */
+@media (max-width: 37em) {
+  /* html {
+    font-size: 37%;
+  } */
+
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .step-text-box:nth-child(1) {
+    grid-row: 2;
+  }
+
+  .step-text-box:nth-child(5) {
+    grid-row: 6;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-plan--complete::after {
+    top: 12%;
+    right: -10%;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
+
+  .step-img-box {
+    transform: translateY(2.4rem);
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .cta-img-box {
+    height: 70rem;
+    grid-row: 1;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
   }
 }
 
