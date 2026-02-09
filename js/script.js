@@ -1,11 +1,14 @@
-console.log("Hello World!!!");
-const myName = "Salvador M. Ursua";
-const h1 = document.querySelector(".heading-primary");
-h1.addEventListener("click", function () {
-  h1.textContent = myName;
-  h1.style.backgroundColor = "red";
-  h1.style.padding = "5rem";
-});
+// console.log("Hello World!!!");
+// const myName = "Salvador M. Ursua";
+// const h1 = document.querySelector(".heading-primary");
+// h1.addEventListener("click", function () {
+//   h1.textContent = myName;
+//   h1.style.backgroundColor = "red";
+//   h1.style.padding = "5rem";
+// });
+
+document.querySelector(".copyright").textContent =
+  `Copyright &copy; ${Date.getFullYear()}<br />by Omnifood, Inc. All rights reserved.`;
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
