@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width: device-width, initial-scale=1.0">
-  <title>Omnifood</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
@@ -13,9 +12,13 @@
   <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
 
+
+  <script defer src="js/smu.js"></script>
+  <script defer src="js/script.js"></script>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/general.css" />
   <link rel="stylesheet" href="css/queries.css" />
+  <title>Omnifood</title>
 </head>
 
 <body>
@@ -337,7 +340,7 @@
     <section class="section-pricing" id="section-pricing">
       <div class="container">
         <span class="subheading">Pricing</span>
-        <h2 class="heading-secondary">Eating well without breakng the bank</h2>
+        <h2 class="heading-secondary">Eating well without breaking the bank</h2>
       </div>
 
       <div class="container grid grid--2-cols margin-bottom-md">
@@ -509,10 +512,14 @@
           <p class="footer-heading">Account</p>
         </div>
         <ul class="footer-nav">
-          <li><ion-icon name="arrow-dropright"></ion-icon><a class="footer-link" href="#">Create account</a></li>
-          <li><ion-icon name="arrow-dropright"></ion-icon><a class="footer-link" href="#">Sign in</a></li>
-          <li><ion-icon name="arrow-dropright"></ion-icon><a class="footer-link" href="#">iOS app</a></li>
-          <li><ion-icon name="arrow-dropright"></ion-icon><a class="footer-link" href="#">Android app</a></li>
+          <li><ion-icon class="arrow-dropright" name="arrow-dropright"></ion-icon><a class="footer-link" href="#">Create
+              account</a></li>
+          <li><ion-icon class="arrow-dropright" name="arrow-dropright"></ion-icon><a class="footer-link" href="#">Sign
+              in</a></li>
+          <li><ion-icon class="arrow-dropright" name="arrow-dropright"></ion-icon><a class="footer-link" href="#">iOS
+              app</a></li>
+          <li><ion-icon class="arrow-dropright" name="arrow-dropright"></ion-icon><a class="footer-link"
+              href="#">Android app</a></li>
         </ul>
       </nav>
       <nav class="nav-col">
@@ -520,10 +527,14 @@
           <p class="footer-heading">Company</p>
         </div>
         <ul class="footer-nav">
-          <li><ion-icon name="arrow-dropright"></ion-icon><a class="footer-link" href="#">About Omnifood</a></li>
-          <li><ion-icon name="arrow-dropright"></ion-icon><a class="footer-link" href="#">For Business</a></li>
-          <li><ion-icon name="arrow-dropright"></ion-icon><a class="footer-link" href="#">Cooking partners</a></li>
-          <li><ion-icon name="arrow-dropright"></ion-icon><a class="footer-link" href="#">Careers</a></li>
+          <li><ion-icon class="arrow-dropright" name="arrow-dropright"></ion-icon><a class="footer-link" href="#">About
+              Omnifood</a></li>
+          <li><ion-icon class="arrow-dropright" name="arrow-dropright"></ion-icon><a class="footer-link" href="#">For
+              Business</a></li>
+          <li><ion-icon class="arrow-dropright" name="arrow-dropright"></ion-icon><a class="footer-link"
+              href="#">Cooking partners</a></li>
+          <li><ion-icon class="arrow-dropright" name="arrow-dropright"></ion-icon><a class="footer-link"
+              href="#">Careers</a></li>
         </ul>
       </nav>
       <nav class="nav-col">
@@ -531,15 +542,18 @@
           <p class="footer-heading">Resources</p>
         </div>
         <ul class="footer-nav">
-          <li><ion-icon name="arrow-dropright"></ion-icon><a class="footer-link" href="#">Recipe directory</a></li>
-          <li><ion-icon name="arrow-dropright"></ion-icon><a class="footer-link" href="#">Help center</a></li>
-          <li><ion-icon name="arrow-dropright"></ion-icon><a class="footer-link" href="#">Privacy & terms</a></li>
+          <li><ion-icon class="arrow-dropright" name="arrow-dropright"></ion-icon><a class="footer-link" href="#">Recipe
+              directory</a></li>
+          <li><ion-icon class="arrow-dropright" name="arrow-dropright"></ion-icon><a class="footer-link" href="#">Help
+              center</a></li>
+          <li><ion-icon class="arrow-dropright" name="arrow-dropright"></ion-icon><a class="footer-link"
+              href="#">Privacy & terms</a></li>
         </ul>
       </nav>
 
     </div>
   </footer>
-  <script>
+  <!-- <script>
     function navClicked() {
       const result = document.querySelectorAll(".nav-open");
       if (result.length > 0) {
@@ -548,7 +562,7 @@
         document.querySelectorAll(".header")[0].classList.add("nav-open");
       }
     }
-  </script>
+  </script> -->
 </body>
 
 </html>
