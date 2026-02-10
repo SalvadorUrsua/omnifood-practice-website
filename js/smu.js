@@ -1,8 +1,16 @@
-function navClicked() {
-  const result = document.querySelectorAll(".nav-open");
-  if (result.length > 0) {
-    result[0].classList.remove("nav-open");
-  } else {
-    document.querySelectorAll(".header")[0].classList.add("nav-open");
-  }
-}
+const btrNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+btrNavEl.addEventListener("click", () => {
+  // const result = document.querySelector(".header.nav-open");
+  // if (result) {
+  //   headerEl.classList.remove("nav-open");
+  // } else {
+  //   headerEl.classList.add("nav-open");
+  // }
+
+  headerEl.classList.toggle("nav-open");
+});
+
+const currentYear = new Date().getFullYear();
+year = document.querySelector(".year");
+year.textContent = currentYear;
