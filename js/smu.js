@@ -15,6 +15,10 @@ anchorLinks.forEach(function (link) {
     const href = link.getAttribute("href");
 
     // scroll back to the top
+    if (link.classList.contains("main-nav-link")) {
+      headerEl.classList.toggle("nav-open");
+    }
+
     if (href === "#") {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
@@ -22,10 +26,6 @@ anchorLinks.forEach(function (link) {
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
-    }
-
-    if (link.classList.contains("main-nav-link")) {
-      headerEl.classList.toggle("nav-open");
     }
   });
 });
