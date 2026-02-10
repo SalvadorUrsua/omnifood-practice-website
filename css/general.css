@@ -55,7 +55,8 @@ Medium: 11px
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
+  /* SMOOTH SCROLLING on CHROME */
+  /* scroll-behavior: smooth; */
 }
 
 * {

@@ -168,6 +168,10 @@
     font-size: 3rem;
   }
 
+  .main-nav-link {
+    font-size: 3rem !important;
+  }
+
   .nav-open .icon-mobile-nav[name="close"] {
     display: block;
   }
