@@ -255,8 +255,8 @@
   }
 
   .pricing-plan--complete::after {
-    top: 6%;
-    right: -25%;
+    top: 8%;
+    right: -20%;
   }
 }
 
@@ -318,8 +318,8 @@
   }
 
   .pricing-plan--complete::after {
-    top: 4%;
-    right: -30%;
+    top: 23%;
+    right: -70%;
   }
 }
 
@@ -410,8 +410,8 @@
 /* 412 / 16 = 26 */
 @media (max-width: 25.75rem) {
   .pricing-plan--complete::after {
-    top: 12%;
-    right: -14%;
+    top: 9%;
+    right: -17%;
   }
 
   .grid--footer {
