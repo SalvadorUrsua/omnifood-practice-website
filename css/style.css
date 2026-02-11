@@ -26,7 +26,7 @@ body {
 }
 
 /*************START*************/
-/*         NAVITAGION          */
+/*         NAVIGATION          */
 /*******************************/
 
 .main-nav-list {
@@ -90,12 +90,29 @@ body {
   display: none;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.959);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.observer {
+  margin-top: 9.6rem;
+}
+
 /*******************************/
 /*         NAVIGATION          */
 /**************END**************/
-/* HEADER */
-/* HERO SECTION */
-
+/*************START*************/
+/*        HERO SECTION         */
+/*******************************/
 .section-hero {
   padding: 4.8rem 0 9.6rem 0;
   background-color: #fdf2e9;
@@ -137,10 +154,6 @@ body {
   border: 3px solid #fdf2e9;
 }
 
-/* .delivered-imgs img:last-child {
-  margin: 0;
-  } */
-
 .delivered-imgs img:not(:last-child) {
   margin-right: -1.6rem;
 }
@@ -158,11 +171,14 @@ body {
 .hero-img {
   width: 100%;
 }
-/* HERO SECTION */
+
+/**************END**************/
+/*        HERO SECTION         */
+/**************END**************/
 
 /*************START*************/
 /*    FEATURED IN SECTION      */
-/*******************************/
+/*************START*************/
 .section-featured {
   padding: 4.8rem 0 3.2rem 0;
 }
