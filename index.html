@@ -25,6 +25,8 @@
   <link rel="stylesheet" href="css/general.css" />
   <link rel="stylesheet" href="css/queries.css" />
   <link rel="icon" href="img/favicon-64.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
   <title>Omnifood &mdash; Never cook again!</title>
 </head>
 
@@ -72,8 +74,12 @@
           </div>
         </div>
         <div class="hero-img-box">
-          <img class="hero-img" src="img/hero.png"
-            alt="Woman enjoying food, meals in storage container, and food bowls on a table" />
+          <picture>
+            <source srcset="img/hero-webp.webp" type="image/webp">
+            <source srcset="img/hero-min.png" type="image/png">
+            <img class="hero-img" src="img/hero-min.png"
+              alt="Woman enjoying food, meals in storage container, and food bowls on a table" />
+          </picture>
         </div>
       </div>
     </section>
