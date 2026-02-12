@@ -40,13 +40,14 @@ const sectionHeroEl = document.querySelector(".section-hero");
 const mobileBtn = document.querySelectorAll(".btn-mobile-nav");
 const mobileDisplay = window.getComputedStyle(mobileBtn[0]).display;
 function getOptions() {
-  if (mobileDisplay === "block") {
-    // MOBILE
-    return { root: null, threshold: 0, rootMargin: "-80px" }; //, rootMargin: "0px 0px -300px 0px"
-  } else {
-    // LARGE SCREEN
-    return { root: null, threshold: 0 };
-  }
+  return { root: null, threshold: 0, rootMargin: "-80px" }; //, rootMargin: "0px 0px -300px 0px"
+  // if (mobileDisplay === "block") {
+  //   // MOBILE
+  //   return { root: null, threshold: 0, rootMargin: "-80px" }; //, rootMargin: "0px 0px -300px 0px"
+  // } else {
+  //   // LARGE SCREEN
+  //   return { root: null, threshold: 0 };
+  // }
 }
 
 const obs = new IntersectionObserver(function (entries) {
