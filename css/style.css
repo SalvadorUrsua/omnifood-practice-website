@@ -63,6 +63,7 @@ body {
   border-radius: 9px;
   color: #fff;
   background-color: #e67e22;
+  text-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.2);
 }
 
 .main-nav-link.nav-cta:hover,
@@ -104,7 +105,6 @@ body {
 }
 
 .sticky .section-hero {
-  /* margin-top: 9.6rem; */
   margin-top: 9.6rem;
 }
 
@@ -404,7 +404,8 @@ body {
 
 .testimonial-img {
   width: 6.4rem;
-  border-radius: 50%;
+  /* border-radius: 50%; */
+  clip-path: circle(50%);
   margin-bottom: 1.2rem;
 }
 
